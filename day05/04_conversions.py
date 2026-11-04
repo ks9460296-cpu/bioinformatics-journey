@@ -26,3 +26,4 @@ print(tuple("ATGGC"))  # Output will be ('A', 'T', 'G', 'G', 'C')
 print(set("ATGGC"))  # Output will be {'A', 'T', 'G', 'C'} - unique letters
 print(sorted("ATGGC"))  # Output will be ['A', 'C', 'G', 'G', 'T'] - sorted list of letters
 print(sorted(set("ATGGC")))  # Output will be ['A', 'C', 'G', 'T'] - unique letters sorted
+print(len(set("ATGGC")))  # Output will be 4, since there are 4 unique letters: A, T, G, C

@@ -1,0 +1,1 @@
+Concept: a FASTA file is text with a fixed layout. A line starting with > is a header (the sequence’s name), and the lines under it are the sequence. Long sequences are usually wrapped across several lines, so one record can span many lines. The new tool is .startswith(">"), which asks whether a line begins with a given character.
