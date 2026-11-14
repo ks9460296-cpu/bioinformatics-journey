@@ -21,10 +21,11 @@ st.set_page_config(
     layout="wide",
 )
 
-OUT_DIR = "als_ideathon_outputs"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUT_DIR = os.path.join(BASE_DIR, "als_ideathon_outputs")
 MODEL_PATH = os.path.join(OUT_DIR, "als_subtype_classifier.pkl")
 PANEL_CSV = os.path.join(OUT_DIR, "top20_biomarker_panel.csv")
-GZ_PATH = "GSE234297_gene_raw_counts.txt.gz"
+GZ_PATH = os.path.join(BASE_DIR, "GSE234297_gene_raw_counts.txt.gz")
 WALKIN_CSV = os.path.join(OUT_DIR, "new_walkin_patient.csv")
 
 SUBTYPE_DETAILS = {
